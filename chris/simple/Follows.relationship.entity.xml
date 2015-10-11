@@ -1,4 +1,4 @@
-<relationship namespace="Acme\Entity">
+<relationship namespace="Acme\Entity" type="FOLLOWS">
     <type value="FOLLOWS"/>
     <properties>
         <property name="since" type="datetime"/>

@@ -8,6 +8,6 @@
     </properties>
     <relationships>
         <relationship type="OWNS" direction="OUTGOING" reference="Acme\Entity\Repository" collection="true"/>
-        <relationship type="FOLLOWS" direction="OUTGOING" entity="Acme\Entity\FollowsRelationship" collection="true"/>
+        <relationship entity="Acme\Entity\FollowsRelationship" direction="OUTGOING" collection="true"/>
     </relationships>
 </node>
