@@ -1,0 +1,13 @@
+<node namespace="Acme\Entity" label="User">
+    <properties>
+        <property name="lastName" key="last_name" type="string" optional="true"/>
+        <property name="firstName" type="string"/>
+        <property name="login" type="string" unique="true"/>
+        <property name="github_id" type="integer" unique="true"/>
+        <property name="age" type="integer" indexed="true"/>
+    </properties>
+    <relationships>
+        <relationship type="OWNS" direction="OUTGOING" reference="Acme\Entity\Repository" collection="true"/>
+        <relationship type="FOLLOWS" direction="OUTGOING" entity="Acme\Entity\FollowsRelationship" collection="true"/>
+    </relationships>
+</node>

@@ -1,0 +1,8 @@
+<node namespace="Acme\Entity" label="Repository">
+    <properties>
+        <property name="name" type="string"/>
+    </properties>
+    <relationships>
+        <relationship type="OWNED_BY" direction="INCOMING" reference="Acme\Entity\User"/>
+    </relationships>
+</node>

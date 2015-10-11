@@ -1,0 +1,6 @@
+<relationship namespace="Acme\Entity">
+    <type value="FOLLOWS"/>
+    <properties>
+        <property name="since" type="datetime"/>
+    </properties>
+</relationship>
